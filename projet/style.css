@@ -1,7 +1,21 @@
+html{
+	position: relative;
+	min-height: 100%;
+}
+
 body{
 	width: 100%;
 	padding: 20px;
 }
+
+#mention a{ 
+color: yellow;
+}
+
+#contacte a{
+	color: yellow;
+}
+
 #header{
 	border: 1px solid green;
 	background-color: green;
@@ -33,13 +47,15 @@ margin-bottom: 20px;
 	background-color: green;
 	text-align: center;
 	color: yellow;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	
-
 }
 
 #menu1{
 	border: 1px solid black;
-	height: 100px;
+	height: 200px;
 	width: 40%;
 	margin-left: 80px;
 	margin-bottom: 20px;
@@ -47,7 +63,7 @@ margin-bottom: 20px;
 
 #menu2{
 	border: 1px solid black;
-	height: 100px;
+	height: 200px;
 	width: 40%;
 	margin-left: 20px;
 	margin-bottom: 20px;
@@ -55,14 +71,14 @@ margin-bottom: 20px;
 
 #menu3{
 	border: 1px solid black;
-	height: 100px;
+	height: 200px;
 	width: 40%;
 	margin-left: 80px;
 }
 
 #menu4{
 	border: 1px solid black;
-	height: 100px;
+	height: 200px;
 	width: 40%;
 	margin-left: 20px;
 }
