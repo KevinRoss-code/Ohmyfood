@@ -1,86 +1,101 @@
 html{
 	position: relative;
-	min-height: 100%;
+	min-height: 90%;
 }
 
 body{
-	width: 100%;
+	width: 90%;
 	padding: 20px;
 }
 
 #mention a{ 
-color: yellow;
+color: #FFA000;
 }
 
 #contacte a{
-	color: yellow;
+	color:#FFA000;
 }
 
 #header{
-	border: 1px solid green;
-	background-color: green;
+	border: 1px solid #80CBC4;
+	background-color: #80CBC4;
 	text-align: center;
-	color: yellow;
+	color: #FFA000;
+	width: 60%;
 	margin-bottom: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-size: 50px;
 	
-
 }
 
 #contenu{
 	text-align: center;
+
 }
 
 #cadre{
 text-align: center;
 margin-top: 20px;
-margin-bottom: 20px;
+margin-bottom: 150px;
+font-size: 30px;
+margin-left: 5%;
 }
 
 #cadre span{
 	display: inline-block;
 	border: 2px solid black;
 	border-radius: 5px 5px 5px 5px;
-	}
+	background-color: #80CBC4;
+	color: #FFEB3B;
+}
 
 #footer{
-	border: 1px solid green;
-	background-color: green;
+	border: 1px solid #80CBC4;
+	background-color: #80CBC4;
 	text-align: center;
-	color: yellow;
 	position: absolute;
 	bottom: 0;
-	width: 100%;
+	width: 97%;
+	position: fixed;
+	margin-bottom: 10px;
+	margin-top: 50px;
+	font-size: 40px;
 	
 }
 
 #menu1{
 	border: 1px solid black;
-	height: 200px;
-	width: 40%;
-	margin-left: 80px;
+	height: 600px;
+	width: 300px;
+	margin-left: 325px;
 	margin-bottom: 20px;
+	margin-right: 50px;
+
 }
 
 #menu2{
 	border: 1px solid black;
-	height: 200px;
-	width: 40%;
-	margin-left: 20px;
-	margin-bottom: 20px;
+	height: 600px;
+	width: 300px;
+	
 }
 
 #menu3{
 	border: 1px solid black;
-	height: 200px;
-	width: 40%;
-	margin-left: 80px;
+	height: 600px;
+	width: 300px;
+	margin-left: 325px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	
 }
 
 #menu4{
 	border: 1px solid black;
-	height: 200px;
-	width: 40%;
-	margin-left: 20px;
+	height: 600px;
+	width: 300px;
+	
 }
 
 
