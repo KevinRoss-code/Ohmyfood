@@ -1,0 +1,26 @@
+body{
+	background-color: #FFDFD7;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 50px;
+	color: #230D0D;
+	font-size: 60px;
+
+}
+
+h3{
+	text-align: center;
+	margin-left: -100px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	color: #230D0D;
+	font-size: 40px;
+}
+#contenu{
+
+	margin-left: 100px;
+	color: #230D0D;
+	font-size: 30px;
+}
