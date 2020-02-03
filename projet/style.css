@@ -11,6 +11,7 @@ body{
 img{
 	width: 100%;
 	height: 100%;
+
 }
 #mention a{ 
 color: #FFA000;
@@ -73,7 +74,8 @@ margin-left: 40px;
 	margin-left: 200px;
 	margin-bottom: 20px;
 	margin-right: 50px;
-	background-color: #FFDFD7; 
+	background-color: #FFDFD7;
+	 
 
 }
 
@@ -102,8 +104,54 @@ margin-left: 40px;
 	
 }
 
+.menu{
+padding: 1.85rem 3rem;
+transition-property: transform;
+transition-duration: 3s;
 
-
-
+}
+.menu:hover{
+	transform: scale(1.2);
+}
  
 
+
+ #cadre:after{
+ 	animation: chargement steps(1,end) 1s infinite;
+ 	content: '';
+ }
+
+@keyframes chargement{
+	 0%   { content: ''; }
+  25%  { content: '.';
+  		opacity: 0.25; }
+  50%  { content: '..'; 
+		opacity: 0.75;}
+  75%  { content: '...'; 
+		opacity: 1;}
+  100% { content: ''; }
+}
+
+.page:hover{
+	animation: thing 3s infinite;
+}
+
+@keyframes thing{
+	0%{transform: rotate(0deg);}
+	30%{transform: rotate(-10deg);}
+	40%{transform: rotate(10deg);}
+	50%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+}
+
+.mail:hover{
+	animation: thing 3s infinite;
+}
+
+@keyframes thing{
+	0%{transform: rotate(0deg);}
+	30%{transform: rotate(-10deg);}
+	40%{transform: rotate(10deg);}
+	50%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+}
