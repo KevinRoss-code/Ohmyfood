@@ -1,4 +1,5 @@
 body{
+	width: 90%;
 	background-color: #FAFAFA;
 }
 
@@ -23,6 +24,7 @@ h3{
 	margin-left: 100px;
 	color: #7986CB;
 	font-size: 30px;
+	margin-bottom: 100px;
 }
 
 .bouton{
