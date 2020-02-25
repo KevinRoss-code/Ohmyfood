@@ -1,25 +1,30 @@
-body{
-	width: 90%;
-}
-
+/*===============================mise en forme du site=================*/
 header{
 	border: 1px solid #80CBC4;
 	background-color: #80CBC4;
 	text-align: center;
 	color: #FFA000;
-	margin-bottom: 20px;
-	margin-left: 60px;
-	font-size: 50px;
-	margin-top: 20px;
+	margin-bottom: 5%;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-size: 3em;
+	margin-top: 5%;
+}
+img{
+	width: 90%;
+	height: 100%;
+}
+#mention{
+	color: red;
 }
 
 #cadre{
-text-align: center;
-margin-top: 120px;
-margin-bottom: 200px;
-font-size: 30px;
-margin-left: 60px;
-
+	text-align: center;
+	margin-right: 30%;
+	margin-left: 30%;
+	margin-bottom: 10%;
+	font-size: 3em;
+	margin-top: 5%;
 }
 
 #cadre span{
@@ -28,7 +33,7 @@ margin-left: 60px;
 	border-radius: 5px 5px 5px 5px;
 	background-color: #80CBC4;
 	color: #FFA000;
-	width: 20%;
+	width: 60%;
 }
 
 footer{
@@ -43,23 +48,9 @@ footer{
 	font-size: 30px;
 }
 
-img{
-	height: 90%;
-	width: 90%;
-}
 
-section{
-	padding-left: 200px;
-	padding-top: 50px;
-}
 
-#mention a{ 
-color: #FFA000;
-}
 
-#contacte a{
-	color:#FFA000;
-}
 
 article{
 	opacity: 1;
@@ -83,20 +74,13 @@ article:hover{
 
 .page:hover{
 	animation: thing 3s infinite;
-}
-
-@keyframes thing{
-	0%{transform: rotate(0deg);}
-	30%{transform: rotate(-10deg);}
-	40%{transform: rotate(10deg);}
-	50%{transform: rotate(0deg);}
-	100%{transform: rotate(0deg);}
+	
 }
 
 .mail:hover{
 	animation: thing 3s infinite;
+	color: #FFA000;
 }
-
 @keyframes thing{
 	0%{transform: rotate(0deg);}
 	30%{transform: rotate(-10deg);}
@@ -104,6 +88,8 @@ article:hover{
 	50%{transform: rotate(0deg);}
 	100%{transform: rotate(0deg);}
 }
+
+
 
 #cadre span:after{
  	animation: chargement steps(1,end) 1s infinite;
@@ -121,44 +107,24 @@ article:hover{
   100% { content: ''; }
 }
 
-@media all and (min-device-width: 361px) and (max-device-width: 768px){
-
-	header{
-		margin-left: 45px;
-	}
-
-	article{
-		margin-left: -30px;
-		margin-bottom: 50px;
-		width: 370px;
-		height: 500px;
-	}
-
-	#cadre span{
-		width: 40%
-	}
+/*=======================================systeme de grille====================*/
+/*pour les menus*/
+.grid{
+	display: grid;
+	grid-template-columns: 5% 40% 40%;
+	grid-gap: 5%;
 }
 
-@media all and (min-device-width: 320px) and (max-device-width: 360px){
-	header{
-		margin-left: 20px;
-		font-size: 12px;
-		width: 20%;
-	}
-
-	article{
-		margin-left: -75px;
-		margin-bottom: 50px;
-		width: 370px;
-		height: 200px;
-	}
-
-#cadre span{
-	font-size: 12px;
-	margin-left: -30px;
-	width: 40%;
+.enchante{
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
-footer{
-	font-size: 12px;
+.delice{
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
-}	
+/*pour le footer*/
+.grid2{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
