@@ -1,69 +1,50 @@
+/*==================mise en forme===========*/
 body{
 	background-color: #69F0AE;
-	width: 90%
 }
-
-h1{
-	text-align: center;
-	margin-bottom: 50px;
-	color: #7CB342;
-	font-size: 60px;
-
-}
-
-h3{
-	text-align: center;
-	margin-left: -100px;
-	margin-bottom: 50px;
-	margin-top: 50px;
-	color: #4CAF50;
-	font-size: 40px;
-}
-#contenu{
-
-	margin-left: 100px;
-	color: #004D40;
-	font-size: 30px;
-	margin-bottom: 100px;
-}
-
-.bouton{
-	margin-left: 30px;
-	font-size: 20px;
-	
-}
-.bouton a{
-	color:  #004D40;
-}
-
-.trait:after {
-    content: '';
-    display: block;
-    margin: 5px;
-    height: 1px;
-    width: 0;
-
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-}
-.trait:hover:after {
-    width: 90%;
-    background: #444;
-     padding-bottom: -100px;
-}
-
-
 header{
 	border: 1px solid #80CBC4;
 	background-color: #80CBC4;
 	text-align: center;
 	color: #FFA000;
-	margin-bottom: 20px;
-	margin-left: 60px;
-	font-size: 50px;
-	margin-top: 20px;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 3em;
+	margin-top: 5%;
 }
-
+article{
+	margin-bottom: 10%;
+}
+h1{
+	text-align: center;
+	margin-bottom: 5%;
+	color: #7CB342;
+	font-size: 5em;
+}
+h2{
+	color: #4CAF50;
+}
+p{
+	color: #004D40;
+}
+.grid{
+	font-size: 1.5em;
+	margin-left: 15%;
+}
+.titre1:after, .titre2:after, .titre3:after{
+    content: '';
+    display: block;
+    margin: 1%;
+    height: 1%;
+    width: 0;
+	background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.titre1:hover:after, .titre2:hover:after, .titre3:hover:after {
+    width: 90%;
+    background: #444;
+    }
 footer{
 	border: 1px solid #80CBC4;
 	background-color: #80CBC4;
@@ -72,23 +53,17 @@ footer{
 	bottom: 0;
 	width: 100%;
 	position: fixed;
-	margin-bottom: 10px;
-	font-size: 30px;
-	margin-left: -100px;
+	font-size: 1.5em;
 }
-
 #mention a{ 
 color: #FFA000;
 }
-
 #contacte a{
 	color:#FFA000;
 }
-
-.page:hover{
+.page:hover, .mail:hover, .bouton:hover{
 	animation: thing 3s infinite;
 }
-
 @keyframes thing{
 	0%{transform: rotate(0deg);}
 	30%{transform: rotate(-10deg);}
@@ -96,16 +71,49 @@ color: #FFA000;
 	50%{transform: rotate(0deg);}
 	100%{transform: rotate(0deg);}
 }
-
-.mail:hover{
-	animation: thing 3s infinite;
+/*=================grille================*/
+.grid{
+	display: grid;
+	grid-template-columns: 10% 50% 20%;
+	grid-template-rows: auto;
+} 
+.titre1{
+	grid-column-start: 2;
+	grid-row-start: 1;
 }
-
-@keyframes thing{
-	0%{transform: rotate(0deg);}
-	30%{transform: rotate(-10deg);}
-	40%{transform: rotate(10deg);}
-	50%{transform: rotate(0deg);}
-	100%{transform: rotate(0deg);}
+.entree{
+	grid-column-start: 2;
+	grid-row-start: 2;
 }
-
+.prix1{
+	grid-column-start: 3;
+	grid-row-start: 2;
+}
+.titre2{
+	grid-column-start: 2;
+	grid-row-start: 6;
+}
+.plat{
+	grid-column-start: 2;
+	grid-row-start: 7;
+}
+.prix2{
+	grid-column-start: 3;
+	grid-row-start: 7;
+}
+.titre3{
+	grid-column-start: 2;
+	grid-row-start: 10;
+}
+.dessert{
+	grid-column-start: 2;
+	grid-row-start: 11;
+}
+.prix3{
+	grid-column-start: 3;
+	grid-row-start: 11;
+}
+.grid2{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+}

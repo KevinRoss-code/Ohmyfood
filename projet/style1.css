@@ -15,7 +15,7 @@ header{
 }
 h1{
 	text-align: center;
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 	color: #230D0D;
 	font-size: 5em;
 }
@@ -46,12 +46,6 @@ footer{
 	position: fixed;
 	font-size: 1.5em;
 }
-#mention a{ 
-color: #FFA000;
-}
-#contacte a{
-	color:#FFA000;
-}
 .page:hover, .mail:hover, .bouton:hover{
 	animation: thing 3s infinite;
 }
@@ -61,6 +55,9 @@ color: #FFA000;
 	40%{transform: rotate(10deg);}
 	50%{transform: rotate(0deg);}
 	100%{transform: rotate(0deg);}
+}
+.prix1, .prix2, .prix3{
+	margin-left: 10%;
 }
 /*=================grille================*/
 .grid{

@@ -128,3 +128,88 @@ article:hover{
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
+/*=================responcive=============*/
+/*==============moyen=====================*/
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+body{
+	width: 90%;
+}
+/*===========grille===============*/
+.grid{
+	display: grid;
+	grid-template-columns: 10% 1fr;
+	grid-template-rows: auto;
+}
+.chic{
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+.delice{
+	grid-column-start: 2;
+	grid-row-start: 3;
+}
+.gout{
+	grid-column-start: 2;
+	grid-row-start: 4;
+}
+/*======mise en forme============*/
+section{
+	margin-bottom: 60%;
+}
+#cadre{
+	margin-bottom: 50%;
+	width: 80%;
+	margin-left: 15%;
+}
+header{
+	margin-left: 15%;
+	margin-right: 5%;
+}
+section{
+	margin-left: 1%;
+}
+}
+/*===============petit============*/
+@media screen and (min-device-width: 320px) and (max-device-width: 767px){
+/*===============grille===========*/
+.grid{
+	display: grid;
+	grid-template-columns: 10% 1fr;
+	grid-template-rows: auto;
+}
+.chic{
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+.delice{
+	grid-column-start: 2;
+	grid-row-start: 3;
+}
+.gout{
+	grid-column-start: 2;
+	grid-row-start: 4;
+}
+/*==========forme=============*/
+header{
+	width: 60%;
+	font-size: 1.5em;
+	margin-left: 22%;
+}
+article{
+	width: 60%;
+	height: 80%;
+}
+section{
+	margin-bottom: 40%;
+	margin-left: 20%;
+}
+#cadre{
+	font-size: 1.5em;
+	margin-bottom: 40%;
+	width: 80%;
+	margin-left: 10%;
+}
+footer{
+	font-size: 1em;
+}
+}
