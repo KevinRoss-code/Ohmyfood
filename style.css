@@ -367,7 +367,6 @@ img{
   border-radius: 5px 5px 5px 5px;
   background-color: #80CBC4;
   color: #FFA000;
-  width: 41%;
   margin-left: 30%;
   margin-bottom: 50%;
   font-size: 1.5em;
@@ -425,28 +424,36 @@ animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
-@media (min-width: 500px){
+}
+@media (min-width: 600px){
   #cadre{
-    width: 41%;
+    margin-left: 5%;
   }
-  header p{
-    font-size: 8rem;
+}
+@media (min-width: 800px){
+  footer{
+    font-size: 1.5rem;
+  }
+  #cadre{
+    font-size: 1.5rem;
+    margin-left: 10%;
   }
 }
 
-@media (min-width: 1200px) {
-  
-.cadre span{
-  font-size: 1.5rem;
-}  
+@media (min-width: 1200px){
+header{
+  font-size: 3rem;
+}
+ 
 article{
   opacity: 1;
-  -webkit-transition: .3s ease-in-out;
-  width: 600px;
-  height: 500px;
+  -webkit-transition: .3s ease-in-out 0s;
   overflow: hidden;
-  padding: 2px;
-  
+  display: inline-block;
+}
+section{
+  margin-left: 10%;
+  margin-bottom: 15%;
 }
 article:hover{
   opacity: .5;
@@ -456,10 +463,12 @@ article:hover{
   -o-transform: scale(1.05);
   -moz-transform: scale(1.05);
 }
+#cadre{
+  margin-left: 15%;
+}
 .grid{
   display: grid;
   grid-template-columns: 5% 40% 40%;
-  grid-gap: 5%;
 }
 
 .enchante{
