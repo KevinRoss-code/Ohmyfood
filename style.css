@@ -361,14 +361,17 @@ img{
   margin-left: 5%;
   margin-top: 10%;
 }
+#cadre{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30%;
+}
 #cadre span{
   display: inline-block;
   border: 2px solid black;
   border-radius: 5px 5px 5px 5px;
   background-color: #80CBC4;
   color: #FFA000;
-  margin-left: 30%;
-  margin-bottom: 50%;
   font-size: 1.5em;
 }
 #cadre span:after{
@@ -425,18 +428,12 @@ animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     transform: translate3d(4px, 0, 0);
   }
 }
-@media (min-width: 600px){
-  #cadre{
-    margin-left: 5%;
-  }
-}
 @media (min-width: 800px){
   footer{
     font-size: 1.5rem;
   }
   #cadre{
     font-size: 1.5rem;
-    margin-left: 10%;
   }
 }
 
@@ -444,27 +441,27 @@ animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 header{
   font-size: 3rem;
 }
- 
-article{
-  opacity: 1;
-  -webkit-transition: .3s ease-in-out 0s;
-  overflow: hidden;
-  display: inline-block;
+img{
+  box-shadow: 1px 1px 12px #aaa;
 }
 section{
   margin-left: 10%;
   margin-bottom: 15%;
 }
+article{
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out 0s;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+}
 article:hover{
   opacity: .5;
-    transform: scale(1.05);
+  transform: scale(1.05);
   -ms-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -o-transform: scale(1.05);
   -moz-transform: scale(1.05);
-}
-#cadre{
-  margin-left: 15%;
 }
 .grid{
   display: grid;
