@@ -385,7 +385,7 @@ footer{
     content: '';
     display: block;
     margin: 1%;
-    height: 10px;
+    height: 3px;
     width: 10%;
   background: transparent;
     transition: width .5s ease, background-color .5s ease;
@@ -514,6 +514,9 @@ section{
   background-color: #FFDFD7;
   color: #230D0D;
   line-height: 2.5rem;
+}
+section p{
+  padding-left: 5%;
 }
 img{
   margin-left: 0;

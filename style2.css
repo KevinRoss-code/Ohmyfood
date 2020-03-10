@@ -386,6 +386,9 @@ h2{
 section{
   margin-bottom: 20%;
 }
+section p{
+  padding-left: 5%;
+}
 footer{
   border: 1px solid #80CBC4;
   background-color: #80CBC4;
@@ -398,7 +401,7 @@ footer{
     content: '';
     display: block;
     margin: 1%;
-    height: 10px;
+    height: 3px;
     width: 10%;
   background: transparent;
     transition: width .5s ease, background-color .5s ease;
@@ -447,6 +450,7 @@ animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 .droite{
   grid-column-start: 3;
   grid-row-start: 1;
+  transform: rotate(180deg);
 }
 .entree{
   grid-column: 1 / span 3;
@@ -463,6 +467,7 @@ animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 .droite2{
   grid-column-start: 3;
   grid-row-start: 6;
+  transform: rotate(180deg);
 }
 .plat{
   grid-column: 1 / span 3;
@@ -479,6 +484,7 @@ animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 .droite3{
   grid-column-start: 3;
   grid-row-start: 10;
+  transform: rotate(180deg);
 }
 .dessert{
   grid-column: 1 / span 3;
