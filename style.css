@@ -366,28 +366,35 @@ img{
   justify-content: center;
   margin-bottom: 30%;
 }
-#cadre span{
+#cadre p{
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #80CBC4;
   border-radius: 5px 5px 5px 5px;
   background-color: #80CBC4;
   color: #FFA000;
   font-size: 1.5em;
 }
-#cadre span:after{
-  animation: chargement steps(1,end) 1s infinite;
-  content: '';
- }
-
+#cadre span:after, #cadre span:before{
+  animation: chargement steps(1,end) 2s infinite;
+  content: ".";
+}
 @keyframes chargement{
-   0%   { content: ''; }
-  25%  { content: '.';
-      opacity: 0.25; }
-  50%  { content: '..'; 
-    opacity: 0.75;}
-  75%  { content: '...'; 
-    opacity: 1;}
-  100% { content: ''; }
+   0%   { content: '';
+          opacity: 0.75; }
+  25% {
+        content: ".";
+        opacity: 1;
+  }
+  50%{
+    content: "";
+  }
+  75%{
+    content: ".";
+    opacity: 1;
+  }
+  100%{
+    content: ".";
+  }
 }
 a{
   color: #FFA000;

@@ -376,7 +376,7 @@ section{
   margin-bottom: 20%;
 }
 section p{
-  padding-left: 5%;
+ text-align: center;
 }
 footer{
   border: 1px solid #80CBC4;
@@ -481,7 +481,8 @@ animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   grid-template-columns: 50% 50%;
 }
 .prix, .prix2, .prix3{
-  margin-left: 50%;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 750px){
   header p{
@@ -519,6 +520,10 @@ section{
   font-size: 1.5em;
   background-color: #E0E0E0;
 
+}
+section p{
+  text-align: justify;
+  padding-left: 5%;
 }
 img{
   margin-left: 0;
