@@ -374,26 +374,47 @@ img{
   color: #FFA000;
   font-size: 1.5em;
 }
-#cadre span:after, #cadre span:before{
-  animation: chargement steps(1,end) 2s infinite;
-  content: ".";
+#point1 {
+  opacity: 0;
+  animation: point1 3s linear infinite;
 }
-@keyframes chargement{
-   0%   { content: '';
-          opacity: 0.75; }
-  25% {
-        content: ".";
-        opacity: 1;
+
+@keyframes point1 {
+  0% {
+ 
+    opacity: 0;
   }
-  50%{
-    content: "";
-  }
-  75%{
-    content: ".";
+  100% {
+    
     opacity: 1;
   }
-  100%{
-    content: ".";
+}
+
+#point2 {
+  animation: point2 3s 1s linear infinite;
+  opacity: 0;
+}
+
+@keyframes point2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#point3 {
+  opacity: 0;
+  animation: point3 3s 2s linear infinite;
+}
+
+@keyframes point3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 a{
