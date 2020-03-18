@@ -352,7 +352,7 @@ header{
   border: 1px solid #80CBC4;
   background-color: #80CBC4;
   text-align: center;
-  color: #FFA000;
+  color: #FFD600;
   font-size: 1.7400em;
 }
 img{
@@ -371,7 +371,7 @@ img{
   border: 2px solid #80CBC4;
   border-radius: 5px 5px 5px 5px;
   background-color: #80CBC4;
-  color: #FFA000;
+  color: yellow;
   font-size: 1.5em;
 }
 #point1 {
@@ -418,7 +418,7 @@ img{
   }
 }
 a{
-  color: #FFA000;
+  color: yellow;
 }
 footer{
   border: 1px solid #80CBC4;
